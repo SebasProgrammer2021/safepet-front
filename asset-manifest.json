@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/safepet-front/static/css/main.073c9b0a.css",
+    "main.js": "/safepet-front/static/js/main.d73c72c4.js",
+    "static/js/787.5da0eb67.chunk.js": "/safepet-front/static/js/787.5da0eb67.chunk.js",
+    "static/media/logo.svg": "/safepet-front/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/safepet-front/index.html",
+    "main.073c9b0a.css.map": "/safepet-front/static/css/main.073c9b0a.css.map",
+    "main.d73c72c4.js.map": "/safepet-front/static/js/main.d73c72c4.js.map",
+    "787.5da0eb67.chunk.js.map": "/safepet-front/static/js/787.5da0eb67.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.d73c72c4.js"
+  ]
+}
