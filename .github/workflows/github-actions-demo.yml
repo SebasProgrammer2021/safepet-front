@@ -25,10 +25,6 @@ jobs:
       - run: echo "running static test...."
 
   To-Deploy:
-    push:
-      branches: [ main ]
-    pull_request:
-      branches: [ main ]
     name: Prod Deploy
     runs-on: ubuntu-latest
     steps:
