@@ -22,10 +22,14 @@ jobs:
     name: Static tests
     runs-on: ubuntu-latest
     steps:
-      - run: echo running static test...."
+      - run: echo "running static test...."
 
   To-Deploy:
+    push:
+      branches: [ main ]
+    pull_request:
+      branches: [ main ]
     name: Prod Deploy
     runs-on: ubuntu-latest
     steps:
-      - run: echo running prod deploy"
+      - run: echo "running prod deploy"
