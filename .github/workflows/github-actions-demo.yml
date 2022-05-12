@@ -19,11 +19,13 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
   Static-test:
+    name: Static tests
     runs-on: ubuntu-latest
     steps:
       - run: echo running static test...."
 
   To-Deploy:
+    name: Prod Deploy
     runs-on: ubuntu-latest
     steps:
       - run: echo running prod deploy"
