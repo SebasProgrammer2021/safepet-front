@@ -24,8 +24,8 @@ jobs:
     steps:
       - run: echo "running static test...."
 
-  To-Deploy:
-    name: Prod Deploy
-    runs-on: ubuntu-latest
-    steps:
-      - run: npm run deploy
+  # To-Deploy:
+  #   name: Prod Deploy
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - run: npm run deploy
