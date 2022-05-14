@@ -28,4 +28,4 @@ jobs:
     name: Prod Deploy
     runs-on: ubuntu-latest
     steps:
-      - run: echo "running prod deploy"
+      - run: npm run deploy
