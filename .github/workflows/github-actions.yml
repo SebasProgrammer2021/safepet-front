@@ -23,3 +23,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "running static test...."
+
+  Deploy:
+    name: Prod deploy
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "deploy in production...."
