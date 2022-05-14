@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.0eb691bb.js",
-    "static/js/787.5da0eb67.chunk.js": "/static/js/787.5da0eb67.chunk.js",
-    "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.0eb691bb.js.map": "/static/js/main.0eb691bb.js.map",
-    "787.5da0eb67.chunk.js.map": "/static/js/787.5da0eb67.chunk.js.map"
+    "main.css": "/safepet-front/static/css/main.073c9b0a.css",
+    "main.js": "/safepet-front/static/js/main.00618fe6.js",
+    "static/js/787.5da0eb67.chunk.js": "/safepet-front/static/js/787.5da0eb67.chunk.js",
+    "index.html": "/safepet-front/index.html",
+    "main.073c9b0a.css.map": "/safepet-front/static/css/main.073c9b0a.css.map",
+    "main.00618fe6.js.map": "/safepet-front/static/js/main.00618fe6.js.map",
+    "787.5da0eb67.chunk.js.map": "/safepet-front/static/js/787.5da0eb67.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.0eb691bb.js"
+    "static/js/main.00618fe6.js"
   ]
 }
