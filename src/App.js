@@ -8,7 +8,7 @@ function App() {
   return (
     <Layout>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/safepet-front" element={<Home />} />
         <Route path="about" element={<About />} />
       </Routes>
     </Layout>

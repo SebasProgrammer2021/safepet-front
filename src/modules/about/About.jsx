@@ -9,7 +9,7 @@ const About = () => {
         <p>That feels like an existential question, don't you think?</p>
       </main>
       <nav>
-        <Link to="/">Home</Link>
+        <Link to="/safepet-front">Home</Link>
       </nav>
     </div>
   );
