@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./modules/home/Home";
 import About from "./modules/about/About";
-
+// test new branch
 function App() {
   return (
     <div className="App">
