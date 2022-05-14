@@ -9,6 +9,16 @@ Sebastián Londoño Valencia
 
 Mayo 2022
 
+## Useful commands
+
+### sonar locally
+
+first step run docker to launch the container:
+docker-compose -f docker-compose.yml up -d
+
+in terminal project run to run sonar locally:
+node sonarqube-scanner.js
+
 ### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

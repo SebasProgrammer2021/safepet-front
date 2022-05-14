@@ -1,0 +1,6 @@
+projectKey=safepet-front
+serverUrl=http://localhost:9000
+serverVersion=9.4.0.54424
+dashboardUrl=http://localhost:9000/dashboard?id=safepet-front
+ceTaskId=AYDEmcuho2W2SQQEfMKQ
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYDEmcuho2W2SQQEfMKQ
