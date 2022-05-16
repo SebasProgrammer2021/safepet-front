@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/safepet-front/static/css/main.9df9a42f.css",
-    "main.js": "/safepet-front/static/js/main.9ac37d17.js",
+    "main.css": "/safepet-front/static/css/main.58df29e4.css",
+    "main.js": "/safepet-front/static/js/main.5db23616.js",
     "static/js/787.5da0eb67.chunk.js": "/safepet-front/static/js/787.5da0eb67.chunk.js",
     "index.html": "/safepet-front/index.html",
-    "main.9df9a42f.css.map": "/safepet-front/static/css/main.9df9a42f.css.map",
-    "main.9ac37d17.js.map": "/safepet-front/static/js/main.9ac37d17.js.map",
+    "main.58df29e4.css.map": "/safepet-front/static/css/main.58df29e4.css.map",
+    "main.5db23616.js.map": "/safepet-front/static/js/main.5db23616.js.map",
     "787.5da0eb67.chunk.js.map": "/safepet-front/static/js/787.5da0eb67.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9df9a42f.css",
-    "static/js/main.9ac37d17.js"
+    "static/css/main.58df29e4.css",
+    "static/js/main.5db23616.js"
   ]
 }
