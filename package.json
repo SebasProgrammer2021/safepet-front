@@ -1,5 +1,10 @@
 {
   "name": "safepet-front",
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}"
+    ]
+  },
   "version": "0.1.0",
   "private": true,
   "homepage": "https://SebasProgrammer2021.github.io/safepet-front",
@@ -7,8 +12,10 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
     "env-cmd": "^10.1.0",
     "gh-pages": "^4.0.0",
+    "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
@@ -21,6 +28,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:dev": "react-scripts test --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -43,6 +51,8 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
+    "eslint": "^8.15.0",
+    "eslint-plugin-react": "^7.30.0",
     "postcss": "^8.4.13",
     "sonarqube-scanner": "^2.8.1",
     "tailwindcss": "^3.0.24"

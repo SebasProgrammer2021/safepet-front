@@ -1,0 +1,16 @@
+  .curved-7 {
+  padding: 8px;
+  border-radius:12px;
+  border:3px solid currentColor;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) top   /var(--d,0%) 5px,
+    linear-gradient(#fff 0 0) bottom/var(--d,0%) 5px,
+    linear-gradient(#fff 0 0) left  /5px var(--d,0%),
+    linear-gradient(#fff 0 0) right /5px var(--d,0%),
+    linear-gradient(#fff 0 0) center /calc(100% - 12px) calc(100% - 12px);
+  -webkit-mask-repeat:no-repeat;
+  transition: 0.5s;
+}
+.curved-7:hover {
+  --d:100%;
+}

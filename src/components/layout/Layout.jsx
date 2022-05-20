@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-
+import "./index.css";
 const Layout = (props) => {
   const { children } = props;
 
@@ -26,8 +27,18 @@ const Layout = (props) => {
                     alt="about icon"
                     src="//cdn.jsdelivr.net/npm/heroicons@1.0.1/outline/gift.svg"
                     className="w-7 sm:mx-2 mx-4 inline"
-                  />{" "}
+                  />
                   <span className="hidden sm:inline">About</span>
+                </Link>
+              </li>
+              <li className="py-2 hover:bg-indigo-300 rounded">
+                <Link className="" to="/affiliate" role="button">
+                  <img
+                    alt="about icon"
+                    src="//cdn.jsdelivr.net/npm/heroicons@1.0.1/outline/gift.svg"
+                    className="w-7 sm:mx-2 mx-4 inline"
+                  />
+                  <span className="hidden sm:inline">Afiliados</span>
                 </Link>
               </li>
             </ul>
@@ -51,3 +62,7 @@ const Layout = (props) => {
 };
 
 export default Layout;
+
+Layout.propTypes = {
+  children: React.Node,
+};
