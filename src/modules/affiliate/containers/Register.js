@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Benefits from "./Benefits";
 import config from "../../../config";
 import Payment from "./Payment";
@@ -19,9 +20,8 @@ export default function Register() {
     edad: "",
     raza: "",
   });
-
   const [downloadAvailable, setDownloadAvailable] = useState();
-  const [userPets, setUserPets] = useState([]);
+  const userPets = useState([]);
   const [customerData, setCustomerData] = useState({
     cedula: "",
     nombre: "",
@@ -33,6 +33,7 @@ export default function Register() {
     pets: userPets,
   });
   let title;
+  let navigate = useNavigate();
 
   const handleChange = (e) => {
     setCustomerData({
@@ -51,7 +52,6 @@ export default function Register() {
       .then(function (response) {
         alert("registro exitoso");
         setDownloadAvailable(true);
-        // e.target.reset();
       })
       .catch(function (error) {
         console.log(error);
@@ -178,7 +178,7 @@ export default function Register() {
                           userPets={userPets}
                           petData={petData}
                           setPetData={setPetData}
-                        ></RegisterPetsForm>
+                        />
                       )
                     ) : (
                       <Payment
@@ -234,6 +234,7 @@ export default function Register() {
                         setProceedPayment(false);
                         setIsLoading(false);
                         setDownloadAvailable(false);
+                        navigate("/affiliate");
                       }}
                     >
                       Descargar contrato

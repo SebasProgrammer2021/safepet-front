@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";PropTypes
+import PropTypes from "prop-types";
 import config from "../../../config";
 const axios = require("axios");
 
@@ -37,7 +37,7 @@ export default function Benefits({
     const totalPrice = updatedCheckedState.reduce(
       (sum, currentState, index) => {
         if (currentState === true) {
-          return sum + data[index].costo;
+          return sum + data[index]?.costo;
         }
         return sum;
       },
@@ -66,7 +66,7 @@ export default function Benefits({
               <input
                 className="form-checkbox border-0 rounded text-blueGray-700 w-5 h-5 ease-linear transition-all duration-150 mr-2"
                 name={nombre}
-                onChange={(e) => handleChange(index, idBeneficio, e)}
+                onChange={() => handleChange(index, idBeneficio)}
                 type="checkbox"
                 value={nombre}
                 selected={benefitsSeleted.includes(idBeneficio)}

@@ -15,7 +15,6 @@ export default function CardCopayment() {
       .post(`${config().SERVER_URL}/customer/consultCopago`, { cedula: cedula })
       .then(function (response) {
         setData(response.data.data[0].copago);
-        // e.target.reset();
       })
       .catch(function (error) {
         console.log(error);

@@ -12,7 +12,7 @@ function App() {
   return (
     <Layout>
       <Routes>
-        <Route path="/safepet-front" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="affiliate" element={<AffiliateModule />} />
         <Route path="register-user" element={<Register />} />

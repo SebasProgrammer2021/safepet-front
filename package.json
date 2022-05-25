@@ -7,7 +7,7 @@
   },
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://SebasProgrammer2021.github.io/safepet-front",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
@@ -29,7 +29,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:dev": "react-scripts test --coverage",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "sonar:local": "sonar-scanner -Dproject.settings=sonar-project-local.properties",
+    "deployAWS": "aws s3 sync build/ s3://react-s3-safepet --acl public-read"
   },
   "eslintConfig": {
     "extends": [

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 const RegisterPetsForm = ({ userPets, petData, setPetData }) => {
@@ -14,7 +14,6 @@ const RegisterPetsForm = ({ userPets, petData, setPetData }) => {
     userPets.push(petData);
     setPetData({ nombre: "", edad: "", raza: "" });
   };
-  // console.log(userPets);
 
   return (
     <>
