@@ -2,7 +2,7 @@ import React from "react";
 
 const NotificationDropdown = () => {
   // dropdown props
-  const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
+  const dropdownPopoverShow = false;
   const btnDropdownRef = React.createRef();
   const popoverDropdownRef = React.createRef();
 
