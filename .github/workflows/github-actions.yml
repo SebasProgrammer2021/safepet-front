@@ -3,7 +3,7 @@ name: Pipelines
 on: [push]
 
 jobs:
-  Explore-GitHub-Actions:
+  Demo-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
@@ -18,14 +18,7 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
-  Static-test:
-    name: Static tests
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "running static test...."
-
-  Deploy:
-    name: Prod deploy
+  Prod deploy:
     runs-on: ubuntu-latest
     steps:
       - run: echo "deploy in production...."
