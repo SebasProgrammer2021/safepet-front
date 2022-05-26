@@ -45,11 +45,6 @@ const AddBenefit = ({ setForm }) => {
                 onChange={handleChange}
                 className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
               />
-              {/* {errorMessage && (
-                    <p className="text-red-600 text-base">
-                      Este campo es requerido
-                    </p>
-                  )} */}
             </div>
           </div>
           <>
@@ -125,13 +120,6 @@ const AddBenefit = ({ setForm }) => {
           </div>
         </div>
         <hr className="mt-6 border-b-1 border-blueGray-300" />
-        {/* {showModal.active && (
-              <SmallModal
-                data={data}
-                setShowModal={setShowModal}
-                showModal={showModal}
-              />
-            )} */}
       </div>
     </div>
   );

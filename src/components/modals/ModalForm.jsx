@@ -45,26 +45,9 @@ export default function ModalForm({ id, setModalAffiliateInfo }) {
             telefono: data.telefono,
           });
         }
-        // setAnchorEl(null);
-        // response.error
-        //   ? setShowModal({
-        //       active: true,
-        //       title: "Atención",
-        //       message: "Error al eliminar el usuario",
-        //     })
-        //   : setShowModal({
-        //       active: true,
-        //       title: "Atención",
-        //       message: `${response?.data} exitosamente`,
-        //     });
       })
       .catch((error) => {
         console.log("error :>> ", error);
-        // setShowModal({
-        //   active: true,
-        //   title: "Atención",
-        //   message: "Error en la petición",
-        // });
       });
   }, []);
 
