@@ -30,7 +30,12 @@ export default function CardCopayment() {
             });
             setData();
           }
-          setData(response.data.data[0].copago);
+          setData(
+            new Intl.NumberFormat("en-US", {
+              style: "currency",
+              currency: "USD",
+            }).format(response.data.data[0].copago || 0)
+          );
           setShowModal({
             active: true,
             title: "Valor a pagar",

@@ -25,12 +25,7 @@ export default function SmallModal({ data, showModal, setShowModal }) {
               <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
                 {showModal.message}
               </p>
-              <b className="text-3xl">
-                {new Intl.NumberFormat("en-US", {
-                  style: "currency",
-                  currency: "USD",
-                }).format(data || 0)}
-              </b>
+              <b className="text-3xl">{data}</b>
             </div>
             {/*footer*/}
             <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">

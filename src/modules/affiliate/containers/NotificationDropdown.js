@@ -42,8 +42,8 @@ const NotificationDropdown = ({ cedula }) => {
       .catch((error) => {
         setShowModal({
           active: true,
-          title: "Atención",
-          message: "Error en la petición",
+          title: "Error en la petición",
+          message: `${error}`,
         });
       });
     setData("");

@@ -49,7 +49,7 @@ export default function Register() {
 
     axios
       .post(`${config().SERVER_URL}/customer/addCustomer`, customerData)
-      .then(function (response) {
+      .then(() => {
         alert("registro exitoso");
         setDownloadAvailable(true);
       })
@@ -220,7 +220,7 @@ export default function Register() {
                       target="_blank"
                       rel="noreferrer"
                       download="contrato"
-                      onClick={(e) => {
+                      onClick={() => {
                         setProceedPayment(false);
                         setIsLoading(false);
                         setDownloadAvailable(false);
