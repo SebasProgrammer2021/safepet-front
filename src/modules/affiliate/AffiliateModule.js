@@ -17,7 +17,7 @@ export default function AffiliateModule() {
         </Link>
         <Link
           to="/consult-copayment"
-          className="bg-blue-500 active:bg-lightBlue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 relative"
+          className="bg-blue-500 text-white active:bg-lightBlue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 relative"
         >
           Consultar copago
         </Link>
@@ -27,6 +27,15 @@ export default function AffiliateModule() {
           <CardTable />
         </div>
       </div>
+      <a
+        className="ml-10"
+        target="_blank"
+        href="https://icons8.com/icon/59872/actualizar"
+        without
+        rel="noreferrer"
+      >
+        Actualizar icon by Icons8
+      </a>
     </>
   );
 }

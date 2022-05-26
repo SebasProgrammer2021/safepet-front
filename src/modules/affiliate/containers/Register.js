@@ -48,7 +48,7 @@ export default function Register() {
     setIsLoading(true);
 
     axios
-      .post(`${config().SERVER_URL}/customer/add`, customerData)
+      .post(`${config().SERVER_URL}/customer/addCustomer`, customerData)
       .then(function (response) {
         alert("registro exitoso");
         setDownloadAvailable(true);
@@ -188,27 +188,17 @@ export default function Register() {
                     )}
                     <div className="text-center mt-6">
                       {!proceedPayment ? (
-                        !proceedRegisterPet ? (
-                          <button
-                            className="bg-blueGray-800 text-black active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
-                            onClick={(e) => {
-                              e.preventDefault();
-                              setproceedRegisterPet(true);
-                            }}
-                          >
-                            Continuar
-                          </button>
-                        ) : (
-                          <button
-                            className="bg-blueGray-800 text-black active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
-                            onClick={(e) => {
-                              e.preventDefault();
-                              setProceedPayment(true);
-                            }}
-                          >
-                            Continuar
-                          </button>
-                        )
+                        <button
+                          className="bg-blueGray-800 text-black active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            !proceedRegisterPet
+                              ? setproceedRegisterPet(true)
+                              : setProceedPayment(true);
+                          }}
+                        >
+                          Continuar
+                        </button>
                       ) : (
                         <>
                           <button

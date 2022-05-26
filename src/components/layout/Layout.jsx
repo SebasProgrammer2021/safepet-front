@@ -1,6 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import "./index.css";
+
 const Layout = (props) => {
   const { children } = props;
 
@@ -11,38 +13,56 @@ const Layout = (props) => {
           <div className="sticky top-0 p-4 bg-gray-100 rounded-xl w-full">
             <ul className="flex sm:flex-col overflow-hidden content-center justify-between">
               <li className="py-2 hover:bg-indigo-300 rounded">
-                <Link to="/safepet-front">
+                <Link className="flex items-center gap-3 " to="/">
                   <img
-                    alt="home icon"
-                    src="//cdn.jsdelivr.net/npm/heroicons@1.0.1/outline/home.svg"
-                    className="w-7 sm:mx-2 mx-4 inline"
+                    className="h-10 w-10"
+                    alt="icon"
+                    src="https://img.icons8.com/color/48/000000/home--v1.png"
                   />
                   <span className="hidden sm:inline">Home</span>
                 </Link>
               </li>
               <li className="py-2 hover:bg-indigo-300 rounded">
-                <Link className="" to="/about">
+                <Link className="flex items-center gap-3 " to="/about">
                   <img
-                    alt="about icon"
-                    src="//cdn.jsdelivr.net/npm/heroicons@1.0.1/outline/gift.svg"
-                    className="w-7 sm:mx-2 mx-4 inline"
+                    className="h-10 w-10"
+                    alt="icon"
+                    src="https://img.icons8.com/color/48/000000/info--v1.png"
                   />
                   <span className="hidden sm:inline">About</span>
                 </Link>
               </li>
               <li className="py-2 hover:bg-indigo-300 rounded">
-                <Link className="" to="/affiliate" role="button">
+                <Link
+                  className="flex items-center gap-3 "
+                  to="/affiliate"
+                  role="button"
+                >
                   <img
-                    alt="about icon"
-                    src="//cdn.jsdelivr.net/npm/heroicons@1.0.1/outline/gift.svg"
-                    className="w-7 sm:mx-2 mx-4 inline"
+                    className="h-10 w-10"
+                    alt="icon"
+                    src="https://img.icons8.com/color/48/000000/group.png"
                   />
                   <span className="hidden sm:inline">Afiliados</span>
                 </Link>
               </li>
+              <li className="py-2 hover:bg-indigo-300 rounded">
+                <Link
+                  className="flex items-center gap-3 "
+                  to="/plans"
+                  role="button"
+                >
+                  <img
+                    className="h-10 w-10"
+                    alt="icon"
+                    src="https://img.icons8.com/color/48/000000/odata.png"
+                  />
+                  <span className="hidden sm:inline">Planes</span>
+                </Link>
+              </li>
             </ul>
           </div>
-          <div className="bg-gray-50 rounded-xl border my-3 w-full">
+          <div className="bg-gray-50 rounded-xl border my-3 w-full hidden md:flex">
             <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:py-12 lg:px-8 lg:flex lg:items-center lg:justify-between">
               <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                 <span className="block text-indigo-600 overflow-ellipsis">
@@ -63,5 +83,5 @@ const Layout = (props) => {
 export default Layout;
 
 Layout.propTypes = {
-  children: React.Node,
+  children: PropTypes.node,
 };

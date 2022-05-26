@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import config from "../../../config";
 import NotificationDropdown from "./NotificationDropdown";
+// eslint-disable-next-line no-undef
 const axios = require("axios");
 
 export default function CardTable({ color }) {
@@ -9,21 +10,18 @@ export default function CardTable({ color }) {
 
   const getAfiliates = () => {
     axios
-      .get(`${config().SERVER_URL}/customer/getAll`)
+      .get(`${config().SERVER_URL}/customer/getAllCustomers`)
       .then(function (response) {
         setData(response.data.data);
       })
       .catch(function (error) {
-        console.log(error);
+        console.log(error, "error");
+        alert(error);
       });
   };
 
   useEffect(() => {
     getAfiliates();
-
-    setInterval(() => {
-      getAfiliates();
-    }, 5000);
   }, []);
 
   return (
@@ -35,15 +33,30 @@ export default function CardTable({ color }) {
       >
         <div className="rounded-t mb-0 px-4 py-3 border-0">
           <div className="flex flex-wrap items-center">
-            <div className="relative w-full px-4 max-w-full flex-grow flex-1">
+            <div className="relative w-full px-4 max-w-full flex-grow flex justify-between">
               <h3
                 className={
                   "font-semibold text-xl " +
-                  (color === "light" ? "text-blueGray-700" : "text-white")
+                  (color === "light" ? "text-blueGray-700" : "text-black")
                 }
               >
-                Listado Afiliados
+                Listado Afiliados{" "}
               </h3>
+              <button
+                onClick={() => {
+                  getAfiliates();
+                }}
+                className="bg-[#1fc4da] text-white active:bg-lightBlue-600 font-bold uppercase text-sm px-6 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 relative"
+              >
+                <div className="flex gap-4 items-center">
+                  <img
+                    src="https://img.icons8.com/ios-glyphs/30/000000/refresh--v1.png"
+                    alt="reload icon"
+                    className=""
+                  />
+                  <span>Refrescar</span>
+                </div>
+              </button>
             </div>
           </div>
         </div>
@@ -126,8 +139,8 @@ export default function CardTable({ color }) {
                     <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-base whitespace-nowrap p-4">
                       {direccion}
                     </td>
-                    <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right">
-                      <NotificationDropdown />
+                    <td className="">
+                      <NotificationDropdown cedula={cedula} />
                     </td>
                   </tr>
                 )

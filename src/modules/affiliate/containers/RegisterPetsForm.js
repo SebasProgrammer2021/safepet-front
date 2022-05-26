@@ -17,7 +17,7 @@ const RegisterPetsForm = ({ userPets, petData, setPetData }) => {
 
   return (
     <>
-      <div className="bg-gray-200">
+      <div className="">
         <div className="items-left justify-center">
           <div className="flex flex-col">
             <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
@@ -75,7 +75,7 @@ const RegisterPetsForm = ({ userPets, petData, setPetData }) => {
                 </>
                 <hr className="mt-6 border-b-1 border-blueGray-300" />
                 <button
-                  className="bg-lightBlue-600 text-black active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
+                  className="bg-lime-700 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                   onClick={(e) => {
                     e.preventDefault();
                     handleAddPet(e);
